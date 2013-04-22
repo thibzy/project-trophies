@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="robots" content="noindex,nofollow" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href="{{ app.request.basepath }}/assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="{{ app.request.basepath }}/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
         <link href="{{ app.request.basepath }}/assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -19,11 +20,12 @@
     </head>
     <body>
 
-        <div class="container-fluid">
+        <div id="main" class="container-fluid">
 
             <header class="masthead">
                 {% block navigation %}
-                <ul class="nav nav-pills pull-right">
+                <ul class="nav nav-pills pull-left">
+                    <li id="logo"><a href="#"><i class="icon-trophy"></i></a></li>
                     {% for route, label in navigation %}
                     <li{% if route == app.request.get('_route') %} class="active"{% endif %}>
                         <a href="{{ path(route) }}">{{ label }}</a>
@@ -31,7 +33,6 @@
                     {% endfor %}
                 </ul>
                 {% endblock %}
-                <h1 class="muted">Project trophies</h1>
             </header>
 
             <hr />

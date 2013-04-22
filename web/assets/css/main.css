@@ -1,4 +1,55 @@
 body {
+    font-family: 'Montserrat', sans-serif;
     padding-top: 20px;
     padding-bottom: 40px;
+    background-color: #ece9e2;
+    color: #FFF;
+}
+
+#main {
+    background-color: #353535;
+    margin: 0 20px;
+}
+
+.container-fluid {
+    padding : 0 !important;
+}
+
+/* Navigation */
+.nav-pills > li {
+    border-right: 2px solid #2e2e2e;
+}
+
+.nav-pills > li > a {
+    padding: 10px 15px;
+    font-size: 1.17em;
+    margin: 0;
+    border-radius: 0;
+    color: #FFF;
+}
+
+.nav-pills > li > a:hover {
+    color: #FFF;
+    background-color: #28545b;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+    background-color: #28545b;
+}
+
+.nav-pills > li:not(#logo) > a {
+    line-height: 250%;
+}
+
+header {
+    background-color: #232323;
+    height : 61px;
+}
+
+header #logo {
+    font-size: 2.8em;
+}
+
+header .nav {
+    margin-bottom: 0;
 }
