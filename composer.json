@@ -7,7 +7,11 @@
         {
             "name": "Steven Fouquet",
             "email": "s.fouquet@mentalworks.fr"
-        }
+        },
+        {
+            "name": "Thibault Lenclos",
+            "email": "t.lenclos@mentalworks.fr"
+        },
     ],
     "autoload": {
         "psr-0": {
