@@ -35,8 +35,6 @@
                 {% endblock %}
             </header>
 
-            <hr />
-
             {% block flashes %}
             {% if app.session.flashbag.peekAll|length > 0 %}
             <div class="row-fluid">
@@ -47,7 +45,7 @@
             {% endif %}
             {% endblock flashes %}
 
-            <div class="row-fluid">
+            <div id="content" class="row-fluid">
                 <h2>{% block content_title %}{% endblock %}</h2>
                 {% block content %}{% endblock %}
             </div>
